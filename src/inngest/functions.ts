@@ -81,7 +81,7 @@ export const helloWorld = inngest.createFunction(
               "createOrUpdateFiles",
               async () => {
                 try {
-                  const updatedFiles = (await network.state.data.files) || {};
+                  const updatedFiles = network.state.data.files || {};
                   const sandbox = await getSandbox(sandboxId);
 
                   for (const file of files) {
