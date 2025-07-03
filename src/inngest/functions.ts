@@ -39,7 +39,7 @@ export const codeAgentFunction = inngest.createFunction(
           temperature: 0.1,
         },
       }),
-      tools: [X
+      tools: [
         // Terminal Command Tool
         createTool({
           name: "terminal",
